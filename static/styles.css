@@ -1,0 +1,316 @@
+body {
+    background-image: url('static/fon.png'); /* Прямой путь к изображению */
+    background-position: center; /* Центрируем изображение */
+    background-repeat: no-repeat; /* Избегаем повторения */
+    background-size: cover; /* Масштабируем изображение, чтобы оно заполнило весь экран */
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: #EBBCBB; /* Нежный цвет фона контейнера */
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Легкая тень */
+    padding: 20px;
+    width: 768px; /* Уменьшенная фиксированная ширина контейнера */
+    min-height: 1200px; /* Уменьшенная минимальная высота контейнера */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Контент располагается сверху */
+    align-items: center;
+    position: relative; /* Нужно для абсолютного позиционирования стикера */
+}
+
+header h1 {
+    font-family: 'Modak', cursive; /* Элегантный шрифт Modak */
+    font-size: 80px; /* Увеличенный размер шрифта заголовка */
+    position: relative;
+    margin-bottom: -30px; /* Уменьшенный отступ под заголовком */
+    margin-top: 20px; /* Никакого отступа сверху */
+    color: #000000; /* Цвет текста: черный */
+    font-weight: normal; /* Убираем жирность */
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3); /* Добавляем мягкую тень для четкости */
+}
+
+.photo-container {
+    background-color: #F5E6E8; /* Светлая подложка */
+    padding: 10px; /* Нежные отступы между изображением и подложкой */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Мягкая тень для подложки */
+    margin: -65px 0 20px -30px; /* Меньший отрицательный отступ слева */
+    width: 450px;
+    height: 450px;
+}
+
+.photo {
+    position: absolute; /* Абсолютное позиционирование */
+    top: 130px; /* Позиция стикера относительно верхнего края контейнера */
+    width: 481px; /* Установите желаемую ширину */
+    height: 450px; /* Сохраняет пропорции */
+    z-index: 20; /* Слой стикера поверх остальных */
+    right: 140px;
+}
+
+.vector-image {
+    width: 810px; /* Установите ширину по вашему желанию */
+    height: auto; /* Сохраняет пропорции */
+    margin-top: -385px; /* Отступ сверху, если необходимо */
+}
+
+.sticker {
+    width: 90px; /* Ширина стикера */
+    height: auto; /* Высота стикера */
+    position: absolute; /* Абсолютное позиционирование */
+    top: 35px; /* Позиция стикера относительно верхнего края контейнера */
+    right: 280px;
+    z-index: 20; /* Слой стикера поверх остальных */
+}
+
+.star-icon {
+    position: absolute;
+    top: 80px;  /* Позиционирование сверху */
+    left: 40px;  /* Позиционирование слева */
+    width: 80px;  /* Ширина звезды */
+    height: auto;  /* Автоматическая высота для пропорционального отображения */
+    z-index: 100;  /* Чтобы звезда отображалась поверх остальных элементов */
+}
+
+.krest-icon {
+    position: absolute;
+    top: 150px;  /* Позиционирование сверху */
+    right: 40px;
+    width: 65px;  /* Ширина креста */
+    height: auto;  /* Автоматическая высота для пропорционального отображения */
+    z-index: 100;  /* Чтобы крест отображался поверх остальных элементов */
+}
+
+.fsb-title {
+    font-family: 'Alumni Sans', sans-serif; /* Элегантный шрифт Alumni Sans */
+    font-size: 70px; /* Размер шрифта заголовка */
+    color: #000000; /* Цвет текста: черный */
+    font-weight: normal; /* Убираем жирность */
+    position: absolute;
+    left: 80px;  /* Позиционирование слева */
+    top: 550px;  /* Смещение вниз (измените значение на нужное) */
+}
+
+.oblako-image {
+    position: absolute;
+    width: 690px; /* Установите нужную ширину для изображения облака */
+    height: auto; /* Автоматическая высота для сохранения пропорций */
+    top: 700px; /* Отступ сверху для отделения от других элементов */
+}
+
+.i-image {
+    position: absolute;
+    width: 230px; /* Установите нужную ширину для изображения i */
+    height: auto; /* Автоматическая высота для сохранения пропорций */
+    top: 760px; /* Отступ сверху для отделения от других элементов */
+    right: 0px;
+}
+
+.intro-text {
+    font-family: 'Alumni Sans', sans-serif; /* Используем тот же шрифт для согласованности */
+    font-size: 40px; /* Установите желаемый размер шрифта */
+    color: #000; /* Черный цвет текста */
+    position: absolute;
+    width: 579px;
+    height: auto;
+    top: 690px;
+    left: 80px;
+    text-align: left; /* Выровнять текст по левой стороне */
+}
+
+.security-warranty {
+    font-family: 'Alumni Sans', sans-serif; /* Используем тот же шрифт для согласованности */
+    font-size: 40px; /* Установите желаемый размер шрифта */
+    color: #000; /* Цвет текста (например, красный для привлечения внимания) */
+    text-align: center; /* Центрируем текст */
+    font-weight: normal; /* Убираем жирность */
+    position: absolute;
+    top: 1000px;
+}
+
+.mail-icon {
+    position: absolute;
+    width: 160px; /* Установите желаемую ширину для иконки почты */
+    height: 150px; /* Автоматическая высота для сохранения пропорций */
+    top: 1060px;
+}
+
+/* Стили для модального окна */
+.modal {
+    display: none; /* По умолчанию скрыто */
+    position: fixed;
+    z-index: 1000; /* Поверх всех элементов */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4); /* Полупрозрачный черный фон */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 300px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Медиа-запрос для экрана шириной 375px и высотой 812px */
+@media (max-width: 828px) and (max-height: 812px) {
+    body {
+        background-size: cover;
+        justify-content: flex-start;
+        padding: 10px;
+    }
+
+    .container {
+        width: 90%; /* Ширина контейнера под размер экрана */
+        padding: 10px;
+        min-height: 100vh; /* Высота на весь экран */
+        min-width: 90vw;
+        z-index: 0;
+    }
+
+    header h1 {
+        position: absolute;
+        z-index: 40;
+        top: 10px;
+        font-size: 64px; /* Уменьшаем размер заголовка для мобильного экрана */
+        margin-top: 10px;
+        margin-bottom: -10px;
+        right: 110px;
+    }
+
+    .photo-container {
+        position: absolute;
+        z-index: 2; /* Добавляем для гарантии, что фото будет выше вектора */
+        width: 223px; /* Подстраиваем под ширину экрана */
+        height: 210px;
+        left: 85px;
+        top: 145px;
+    }
+
+    .photo {
+        position: absolute;
+        z-index: 3; /* Наиболее верхний слой для фото */
+        width: 250px;
+        height: auto;
+        left: 25px;
+        top: 20px;
+    }
+
+    .vector-image {
+        position: absolute;
+        top: 80px;
+        width: 390px;
+        height: 200px;
+        margin: 10px auto;
+        z-index: 1; /* Ставим чуть выше фона */
+    }
+
+    .sticker {
+        z-index: 100;
+        width: 50px;
+        height: auto;
+        top: 15px;
+        right: 98px;
+        margin: 10px auto;
+        text-align: center;
+    }
+
+    .star-icon {
+        width: 40px;
+        height: auto;
+        margin: 10px auto;
+        left:15px;
+        top: 20px;
+    }
+
+    .krest-icon {
+        width: 36px;
+        height: 32px;
+        right: 9px;
+        top: 29px;
+        margin: 10px auto;
+        text-align: center;
+    }
+
+    .fsb-title {
+        font-size: 48px;
+        margin: 10px auto;
+        top: 340px;
+        left:20px;
+    }
+
+    .oblako-image {
+        width: 338px;
+        height: 251px;
+        top: 410px;
+        left:7px;
+    }
+
+    .i-image {
+        width: 100px;
+        height: auto;
+        top: 510px;
+        margin: 10px auto;
+        text-align: center;
+    }
+
+    .intro-text {
+        font-size: 25px;
+        width: 269px;
+        height:252px;
+        top: 400px;
+        left:25px;
+    }
+
+    .security-warranty {
+        font-size: 24px;
+        width: 240px;
+        top: 699px;
+        margin: 10px auto;
+        text-align: center;
+    }
+
+    .mail-icon {
+        width: 100px;
+        height: auto;
+        top: 710px;
+        margin: 10px auto;
+        text-align: center;
+    }
+
+    .modal-content {
+        width: 80%; /* Компактное модальное окно */
+    }
+}
+
+}
+

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Julia</title>
+    <link rel="stylesheet" href="static/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Modak&family=Alumni+Sans&display=swap" rel="stylesheet">
+</head>
+
+<style>
+    body {
+        background-image: url('static/fon.png'); /* Исправленный путь */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        overflow-x: hidden;
+        color: #333;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <!-- Добавляем картинку звезды -->
+        <img src="static/star.png" alt="Звезда" class="star-icon">
+
+        <!-- Добавляем картинку креста -->
+        <img src="static/krest.png" alt="Крест" class="krest-icon">
+
+        <header>
+            <h1>Julia</h1>
+            <div class="photo-container">
+                <img src="static/image.png" alt="Фото" class="photo">
+            </div>
+        </header>
+
+        <h2 class="fsb-title">Я полковник ФСБ</h2>
+
+        <p class="intro-text">
+            У меня много имен: юля, джулия, джул, джуля, даджул. Но на самом деле я полковник ФСБ под прикрытием, я не могу раскрыть все свои задачи, но знайте, пока я здесь все будет под контролем!
+        </p>
+
+        <h3 class="security-warranty">Гарантия вашей безопасности!</h3>
+
+        <!-- Иконка почты -->
+        <img src="static/mail_icon.png" alt="Иконка почты" class="mail-icon" onclick="openModal()">
+
+        <!-- Модальное окно -->
+        <div id="mailModal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <h2>Свяжитесь с полковником здесь:</h2>
+                <p>
+                    Почта:
+                    <a href="mailto:teterinajulik@gmail.com" style="color: #000; text-decoration: none;">
+                        teterinajulik@gmail.com
+                    </a>
+                </p>
+                <p>
+                    Telegram:
+                    <a href="https://t.me/julliiys" target="_blank" style="color: #000; text-decoration: none;">
+                        julliiys
+                    </a>
+                </p>
+            </div>
+        </div>
+
+        <!-- Добавляем оставшиеся элементы -->
+        <img src="static/oblako.png" alt="Облако" class="oblako-image">
+        <img src="static/i.png" alt="i" class="i-image">
+        <img src="static/sticker.png" alt="Стикер" class="sticker">
+        <img src="static/Vector.png" alt="Векторное изображение" class="vector-image">
+    </div>
+
+    <script>
+        function openModal() {
+            document.getElementById("mailModal").style.display = "block";
+        }
+
+        function closeModal() {
+            document.getElementById("mailModal").style.display = "none";
+        }
+
+        window.onclick = function(event) {
+            const modal = document.getElementById("mailModal");
+            if (event.target === modal) {
+                modal.style.display = "none";
+            }
+        };
+    </script>
+</body>
+</html>
